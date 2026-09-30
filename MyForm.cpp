@@ -1,0 +1,27 @@
+﻿#include "MyForm.h"
+
+
+using namespace System;
+using namespace System::Windows::Forms;
+// Add the STA attribute before main
+[STAThreadAttribute]
+int main(array<String^>^ args) {
+    // Enable visual styles for modern look
+    Application::EnableVisualStyles();
+    Application::SetCompatibleTextRenderingDefault(false);
+
+    // Create and run your form
+
+    Project1::MyForm form; // Replace MyNamespace with your actual namespace
+    Project1::MyForm1 form1; // Replace MyNamespace with your actual namespace
+    
+    // Show the first form as a modal dialog
+    System::Windows::Forms::Application::Run(% form);
+    System::Windows::Forms::Application::Run(% form1);
+
+
+
+}
+
+
+
